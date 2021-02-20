@@ -1,2 +1,2 @@
-# Example-for-UI-aytotests
+# Example-for-UI-autotests
 This is an example autotest repo
