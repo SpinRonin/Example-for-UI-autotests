@@ -20,4 +20,8 @@ public class LoginServlet extends HttpServlet {
         resp.getWriter().println("</html>");
 
     }
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
+    }
 }
+

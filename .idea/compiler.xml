@@ -7,7 +7,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Example for UI autotests" />
+        <module name="Example-for-UI-aytotests" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Example-for-UI-aytotests" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
