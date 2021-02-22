@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+  <configuration default="false" name="Main" type="Application" factoryName="Application" editBeforeRun="true" nameIsGenerated="true">
     <option name="MAIN_CLASS_NAME" value="Main" />
     <method v="2">
       <option name="Make" enabled="true" />

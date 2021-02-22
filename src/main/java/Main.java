@@ -1,5 +1,7 @@
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
+import servlets.LoginServlet;
+import servlets.TestServlet;
 
 public class Main {
 
@@ -10,6 +12,8 @@ public class Main {
             ServletContextHandler Handler = new ServletContextHandler();
 
             Handler.addServlet(LoginServlet.class, "/login");
+            Handler.addServlet(TestServlet.class, "/list");
+
             server.setHandler(Handler);
             server.start();
         } catch (Exception e) {
