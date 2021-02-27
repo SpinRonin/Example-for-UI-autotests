@@ -9,6 +9,8 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class LoginServlet extends HttpServlet {
+    public static final String SESSION_USER_LOGIN_KEY = "USER_LOGIN";
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         writePage(resp, false);
@@ -19,7 +21,8 @@ public class LoginServlet extends HttpServlet {
       String login = req.getParameter("login");
         String password = req.getParameter("password");
 
-        if(login.equalsIgnoreCase("admin") && password.equals("12345")){
+        if((login.equalsIgnoreCase("General_Kenobi") || login.equalsIgnoreCase("General_Grievous"))  && password.equals("12345")){
+            req.getSession().setAttribute(SESSION_USER_LOGIN_KEY, login);
             resp.sendRedirect("/list");
         } else {
             writePage(resp, true);
